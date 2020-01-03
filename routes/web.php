@@ -29,7 +29,8 @@ Route::resource('/gate', 'GatesController');
 // Routes for Party
 Route::resource('/party', 'Invoice\PartyController');
 
-
+// Routes for Product
+Route::resource('/product', 'Invoice\ProductController');
 
 
 

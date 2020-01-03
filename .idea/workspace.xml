@@ -2,19 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65cc5883-49aa-4963-9cad-59381a606096" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Party/PartyAllRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Party/PartyDeleteRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Party/PartyEditRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Party/PartyStoreRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Party/PartyUpdateRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/PartyValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Invoice/PartyController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MyInvoice/Party.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_03_170303_create_parties_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/party/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/party/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/party/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductAllRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductDeleteRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductEditRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductStoreRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductUpdateRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/ProductValidation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Invoice/ProductController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/MyInvoice/Product.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_03_182726_create_products_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/product/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/product/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/product/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -164,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1577963090911</updated>
       <workItem from="1577963112648" duration="9354000" />
-      <workItem from="1578069112977" duration="5238000" />
+      <workItem from="1578069112977" duration="7391000" />
     </task>
     <servers />
   </component>
@@ -176,9 +175,9 @@
       <screen x="0" y="0" width="1024" height="738" />
     </state>
     <state x="168" y="165" key="run.anything.popup/0.0.1024.738@0.0.1024.738" timestamp="1578070187590" />
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578073974204">
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578076105944">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578073974204" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578076105944" />
   </component>
 </project>
