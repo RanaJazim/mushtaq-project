@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('panel.dashboard.main');
+    return view('panel.dashboard.dashboard');
 });
 
 Route::get('/gate', function () {

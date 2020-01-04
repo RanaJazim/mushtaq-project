@@ -30,5 +30,6 @@ class AppServiceProvider extends ServiceProvider
         Blade::component('modules.clearbtn', 'btnclear');
         Blade::component('modules.table', 'mytable');
         Blade::component('modules.modal', 'modal');
+        Blade::component('modules.panel', 'mypanel');
     }
 }

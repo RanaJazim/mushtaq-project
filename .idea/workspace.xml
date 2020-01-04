@@ -2,31 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65cc5883-49aa-4963-9cad-59381a606096" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Invoice/InvoiceAllRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Invoice/InvoiceDecorator.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Invoice/InvoiceStoreRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Invoice/TaxPayer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Invoice/WithoutTaxPayer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/InvoiceValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/TelescopeServiceProvider.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/telescope.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app-dark.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vendor/telescope/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blog.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/modules/panel.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/dashboard/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Invoice/InvoiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Invoice/InvoiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/myapp/invoiceCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/myapp/invoiceCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/invoice/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/invoice/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/panel/invoice/partymodal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/panel/invoice/partymodal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/panel/invoice/productmodal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/panel/invoice/productmodal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/dashboard/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/dashboard/main.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +158,8 @@
       <updated>1577963090911</updated>
       <workItem from="1577963112648" duration="9354000" />
       <workItem from="1578069112977" duration="7739000" />
-      <workItem from="1578106906802" duration="26155000" />
+      <workItem from="1578106906802" duration="26562000" />
+      <workItem from="1578148190681" duration="2957000" />
     </task>
     <servers />
   </component>
@@ -190,9 +171,9 @@
       <screen x="0" y="0" width="1024" height="738" />
     </state>
     <state x="168" y="165" key="run.anything.popup/0.0.1024.738@0.0.1024.738" timestamp="1578070187590" />
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578136590787">
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578150224974">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578136590787" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578150224974" />
   </component>
 </project>

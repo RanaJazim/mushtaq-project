@@ -19,7 +19,7 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        
+
 
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
@@ -79,7 +79,7 @@
 
                 <ul class="nav" id="side-menu">
                     <li>
-                        <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        <a href="/dashboard" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i> Gate<span class="fa arrow"></span></a>
@@ -91,6 +91,42 @@
                                 <a href="{{ route('gate.index') }}">Display All Gates</a>
                             </li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Invoice<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{ route('invoice.open') }}">Create Invoice</a>
+                            </li>
+                            <li>
+                                <a href="#">Display Invoices</a>
+                            </li>
+                            <li>
+                                <a href="#">Party <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="{{ route('party.create') }}">Create Party</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('party.index') }}">Display All Parties</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-third-level -->
+                            </li>
+                            <li>
+                                <a href="#">Product <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="{{ route('product.create') }}">Create Product</a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('product.index') }}">Display All Products</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-third-level -->
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
                     </li>
                 </ul>
 
