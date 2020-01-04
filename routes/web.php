@@ -32,8 +32,11 @@ Route::resource('/party', 'Invoice\PartyController');
 // Routes for Product
 Route::resource('/product', 'Invoice\ProductController');
 
-
-
+// Routes for Invoice
+Route::get('/invoice/open', 'Invoice\InvoiceController@open')
+    ->name('invoice.open');
+Route::get('/invoice/create', 'Invoice\InvoiceController@create')
+    ->name('invoice.create');
 
 
 

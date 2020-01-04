@@ -1,5 +1,5 @@
 <!-- Modal for Deleting -->
-<div class="modal fade" id="{{ $obj->id }}" role="dialog">
+<div class="modal fade" id="{{ $obj->id ?? $simpleId }}" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->

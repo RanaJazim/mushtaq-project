@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65cc5883-49aa-4963-9cad-59381a606096" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductAllRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductDeleteRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductEditRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductStoreRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Product/ProductUpdateRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/ProductValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Invoice/ProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MyInvoice/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_03_182726_create_products_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/product/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/product/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/product/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Party/InvoicePartyAllRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Invoice/InvoiceController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/MyInvoice/Invoice.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_04_065557_create_invoices_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/js/myaxios.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/js/myvue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/myapp/invoiceCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/myapp/partysearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/myapp/productsearch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/open.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shared/panel/invoice/modalbutton.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shared/panel/invoice/partymodal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/shared/panel/invoice/productmodal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MyInvoice/Party.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MyInvoice/Party.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/MyInvoice/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MyInvoice/Product.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/modules/modal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/modules/modal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +168,8 @@
       <option name="presentableId" value="Default" />
       <updated>1577963090911</updated>
       <workItem from="1577963112648" duration="9354000" />
-      <workItem from="1578069112977" duration="7391000" />
+      <workItem from="1578069112977" duration="7739000" />
+      <workItem from="1578106906802" duration="14627000" />
     </task>
     <servers />
   </component>
@@ -175,9 +181,9 @@
       <screen x="0" y="0" width="1024" height="738" />
     </state>
     <state x="168" y="165" key="run.anything.popup/0.0.1024.738@0.0.1024.738" timestamp="1578070187590" />
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578076105944">
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578124519419">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578076105944" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578124519419" />
   </component>
 </project>
