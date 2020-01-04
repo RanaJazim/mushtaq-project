@@ -1,22 +1,25 @@
 var app = new Vue({
     el: '#invoice',
     data: {
-        productCode: null,
-        partyCode: null,
+        product: null,
+        party: null,
         rate: null,
         qty: null,
         st: 17,
-        whtTax: null
+        whtTax: null,
+        flag: false
     },
     methods: {
-        alert(someData) {
-            console.log('It was Clicked ' + someData);
-            this.partyCode = 1;
+        myParty(someData, isTaxPayer) {
+            console.log('It was Clicked ' + someData + ' ' + isTaxPayer);
+            this.party = someData;
+            if(isTaxPayer == 0)
+                this.st = 0;
         },
-        newAlert(product) {
+        myProduct(product) {
             console.log('Product Code was clicked ' + product);
-            this.productCode = 2;
-        }
+            this.product = product;
+        },
     },
     computed: {
         myValue() {
@@ -31,12 +34,11 @@ var app = new Vue({
         totalValue() {
             return this.myValue + this.saleTaxValue + this.whtValue;
         },
-        isAvailable() {
-            if (this.productCode && this.partyCode)
-                return true;
-            return false;
-        }
-    }
+        isTrue() {
+            if (this.product && this.party)
+                this.flag = true;
+        },
+    },
 
 })
 

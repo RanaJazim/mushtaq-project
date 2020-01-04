@@ -23,7 +23,7 @@
                 @foreach($parties as $party)
                     <tr>
                         <td>
-                            <button @click="alert(1)"
+                            <button @click="myParty({{ $party }}, {{ $isTaxPayer }})"
                                     class="btn btn-primary btn-xs">
                                 Select
                             </button>

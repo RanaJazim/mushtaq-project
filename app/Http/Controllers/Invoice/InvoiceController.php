@@ -2,13 +2,19 @@
 
 namespace App\Http\Controllers\Invoice;
 
+use App\Custom\Repository\Invoice\InvoiceStoreRepo;
 use App\Custom\Repository\Party\InvoicePartyAllRepo;
 use App\Custom\Repository\Product\ProductAllRepo;
+use App\Custom\Validation\InvoiceValidation;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
 {
+    public function index($isTaxPayer)
+    {
+        return $isTaxPayer;
+    }
 
     public function open()
     {
@@ -20,13 +26,16 @@ class InvoiceController extends Controller
     {
         return view('panel.invoice.create', [
             'parties'   => $repo->all_record($request),
-            'products'  => $allRepo->index()
+            'products'  => $allRepo->index(),
+            'isTaxPayer'    => $request['isTaxPayer']
         ]);
     }
 
-    public function store(Request $request)
+    public function store(Request $request, InvoiceStoreRepo $repo)
     {
-        return $request;
+        $repo->store($request, new InvoiceValidation());
+
+        return back();
     }
 
 }

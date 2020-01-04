@@ -37,8 +37,10 @@ Route::get('/invoice/open', 'Invoice\InvoiceController@open')
     ->name('invoice.open');
 Route::get('/invoice/create', 'Invoice\InvoiceController@create')
     ->name('invoice.create');
-
-
+Route::post('/invoice', 'Invoice\InvoiceController@store')
+    ->name('invoice.store');
+Route::get('/invoice/{isTaxPayer}', 'Invoice\InvoiceController@index')
+    ->name('invoice.index');
 
 
 

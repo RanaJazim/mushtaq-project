@@ -23,7 +23,7 @@
                 @foreach($products as $product)
                     <tr>
                         <td>
-                            <button @click="newAlert(1)"
+                            <button @click="myProduct({{ $product }})"
                                     class="btn btn-primary btn-xs">
                                 Select
                             </button>
