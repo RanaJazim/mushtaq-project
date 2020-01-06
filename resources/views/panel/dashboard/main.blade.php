@@ -128,6 +128,28 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Store<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#">Roll Store <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="{{ route('rollstore.create') }}">
+                                            Create Roll Store
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('rollstore.index') }}">
+                                            Display All Roll Store Entries
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-third-level -->
+                            </li>
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
                 </ul>
 
             </div>

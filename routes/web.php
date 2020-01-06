@@ -41,10 +41,11 @@ Route::post('/invoice', 'Invoice\InvoiceController@store')
     ->name('invoice.store');
 Route::get('/invoice/{isTaxPayer}', 'Invoice\InvoiceController@index')
     ->name('invoice.index');
+Route::get('/invoice/party/all/{id}', 'Invoice\InvoiceController@allParty');
 
 
-
-
+// Roll store routes
+Route::resource('/rollstore', 'Store\RollstoreController');
 
 
 

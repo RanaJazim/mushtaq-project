@@ -44,7 +44,5 @@
 <!-- /modal for product -->
 
 @push('scripts')
-
     <script src="{{ asset('app/myapp/productsearch.js') }}"></script>
-
 @endpush
