@@ -2,6 +2,7 @@
 
 namespace App\MyInvoice;
 
+use App\Store\Inward;
 use Illuminate\Database\Eloquent\Model;
 
 class Party extends Model
@@ -11,5 +12,10 @@ class Party extends Model
     public function invoices()
     {
         return $this->hasMany(Invoice::class);
+    }
+
+    public function inwards()
+    {
+        return $this->hasMany(Inward::class);
     }
 }

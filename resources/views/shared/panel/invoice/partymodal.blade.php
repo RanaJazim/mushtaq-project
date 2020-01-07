@@ -18,6 +18,7 @@
                 <th>Select This Row</th>
                 <th>Buyer's Name</th>
                 <th>Party Code</th>
+                <th>Status</th>
             </tr>
             <tbody id="partyCodeTable">
                 @foreach($parties as $party)
@@ -30,6 +31,7 @@
                         </td>
                         <td>{{ $party->buyerName }}</td>
                         <td>{{ $party->partyCode }}</td>
+                        <td>{{ $party->taxPayer == 1 ? 'Tax Payer' : 'Not Tax Payer' }}</td>
                     </tr>
                 @endforeach
             </tbody>
