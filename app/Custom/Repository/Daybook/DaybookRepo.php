@@ -31,7 +31,6 @@ class DaybookRepo
         return [
             'openingBalance' => $openingBalance,
             'remainingBalance' => $openingBalance - $remainingBalance,
-            'daybooks' => $daybooks
         ];
     }
 

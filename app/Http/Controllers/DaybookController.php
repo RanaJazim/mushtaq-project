@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Custom\Repository\Daybook\BalanceRepo;
 use App\Custom\Repository\Daybook\DaybookRepo;
 use App\Custom\Validation\DaybookValidation;
 use Illuminate\Http\Request;
@@ -13,8 +14,6 @@ class DaybookController extends Controller
     {
         $values = $repo->get_values($request['selectDate']);
 
-//        return $values;
-
         return view('panel.daybook.index', [
             'openingBalance' => $values['openingBalance'],
             'remainingBalance' => $values['remainingBalance'],
@@ -23,8 +22,10 @@ class DaybookController extends Controller
         ]);
     }
 
-    public function create(DaybookRepo $repo)
+    public function create(DaybookRepo $repo, BalanceRepo $balanceRepo)
     {
+        $balanceRepo->endDay();
+
         return view('panel.daybook.create', [
             'openingBalance' => $repo->get_values(date('Y-m-d'))['remainingBalance']
         ]);

@@ -21,6 +21,7 @@
             <p>Today Remaining Balance == {{ $remainingBalance }}</p>
         </div>
 
+
         @mytable
         <div>
             <table class="table table-bordered">
@@ -42,7 +43,8 @@
 
                         <!-- edit and delete buttons here -->
                         <td>
-                            <a href="#" data-toggle="modal" data-target="#{{ $daybook->id }}"
+                            <a {{ $date == date('Y-m-d') ? '' : 'disabled' }} href="#"
+                               data-toggle="modal" data-target="#{{ $daybook->id }}"
                                class="btn btn-warning btn-sm">
                                 <i class="fa fa-pencil"></i>
                             </a>
