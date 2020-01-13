@@ -28,18 +28,24 @@ class BalanceRepo
 
     public function endDay()
     {
-        $dayboook = Daybook::all()->last();
-        $date = ($dayboook->created_at)->toDateString();
+        $balanceOnDate = Balance::where('openingBalanceDate', '=', date('Y-m-d'))->first();
 
-        if (!Balance::where('openingBalanceDate', '=', $date)->exists())
+        if (!$balanceOnDate)
         {
-            $repo = new DaybookRepo();
-            $values = $repo->get_values($date);
+            $lastDaybook = Daybook::all()->last();
 
-            $balance = new Balance();
-            $balance->openingBalanceDate = $date;
-            $balance->todayBalance = $values['remainingBalance'];
-            $balance->save();
+            if ($lastDaybook)
+            {
+                $date = ($lastDaybook->created_at)->toDateString();
+                $daybookRepo = new DaybookRepo();
+
+                $values = $daybookRepo->get_values($date);
+
+                $balanceObj = new Balance();
+                $balanceObj->todayBalance = $values['openingBalance'] - $values['remainingBalance'];
+                $balanceObj->openingBalanceDate = date('Y-m-d');
+                $balanceObj->save();
+            }
         }
     }
 }
