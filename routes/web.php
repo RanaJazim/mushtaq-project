@@ -23,6 +23,12 @@ Route::get('/gate', function () {
     return view('panel.gate.create');
 });
 
+// Routes for Day book
+Route::get('/daybook/create', 'DaybookController@create')->name('daybook.create');
+Route::post('/daybook', 'DaybookController@store')->name('daybook.store');
+Route::get('/daybook', 'DaybookController@index')->name('daybook.index');
+Route::patch('/daybook/{daybook}', 'DaybookController@update')->name('daybook.update');
+
 // Routes for Gate
 Route::resource('/gate', 'GatesController');
 

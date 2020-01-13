@@ -2,17 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65cc5883-49aa-4963-9cad-59381a606096" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Store/InwardRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/InwardValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/InwardController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Store/Inward.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_07_073451_create_inwards_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/inward/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/inward/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Daybook/BalanceRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Daybook/DaybookRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/DaybookValidation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DaybookController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/MyDaybook/Balance.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/MyDaybook/Daybook.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_13_083433_create_daybooks_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_13_083532_create_balances_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/myapp/daybookCreate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/Daybook/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/Daybook/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MyInvoice/Party.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MyInvoice/Party.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MyInvoice/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MyInvoice/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/shared/panel/invoice/partymodal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/shared/panel/invoice/partymodal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +133,9 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -170,6 +173,9 @@
       <workItem from="1578308720592" duration="1167000" />
       <workItem from="1578323855652" duration="3349000" />
       <workItem from="1578380948778" duration="3782000" />
+      <workItem from="1578658497279" duration="1070000" />
+      <workItem from="1578898373155" duration="9541000" />
+      <workItem from="1578912600509" duration="4347000" />
     </task>
     <servers />
   </component>
@@ -177,6 +183,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="104" y="27" key="#Notifications" timestamp="1578901551957">
+      <screen x="0" y="0" width="1024" height="738" />
+    </state>
+    <state x="104" y="27" key="#Notifications/0.0.1024.738@0.0.1024.738" timestamp="1578901551957" />
     <state x="204" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1578383199267">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
@@ -185,13 +195,21 @@
       <screen x="0" y="0" width="1024" height="738" />
     </state>
     <state x="242" y="123" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1024.738@0.0.1024.738" timestamp="1578382703464" />
+    <state x="13" y="11" key="SettingsEditor" timestamp="1578901546535">
+      <screen x="0" y="0" width="1024" height="738" />
+    </state>
+    <state x="13" y="11" key="SettingsEditor/0.0.1024.738@0.0.1024.738" timestamp="1578901546535" />
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1578912616439">
+      <screen x="0" y="0" width="1024" height="738" />
+    </state>
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog/0.0.1024.738@0.0.1024.738" timestamp="1578912616439" />
     <state x="168" y="165" key="run.anything.popup" timestamp="1578070187590">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
     <state x="168" y="165" key="run.anything.popup/0.0.1024.738@0.0.1024.738" timestamp="1578070187590" />
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578384300720">
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1578915568399">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578384300720" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1578915568399" />
   </component>
 </project>
