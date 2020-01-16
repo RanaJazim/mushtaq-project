@@ -19,4 +19,9 @@ class Inward extends Model
     {
         return $this->belongsTo(Product::class);
     }
+
+    public function rawmaterials()
+    {
+        return $this->hasMany(Rawmaterial::class);
+    }
 }

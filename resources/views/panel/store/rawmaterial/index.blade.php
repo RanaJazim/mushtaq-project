@@ -1,7 +1,7 @@
 @extends('panel.dashboard.main')
 
 @section('title')
-    Raw Material Store
+    All Raw Material Store Entries
 @endsection
 
 @section('content')
@@ -9,68 +9,57 @@
     <div id="myheader">
 
         @alert
-        <p>Dashboard > Raw Material Store > Display All Entries</p>
+        <p>Dashboard > Gate > Display All Raw Material Store Entries</p>
         @endalert
 
         @btn
-        <a href="{{ route('inward.create') }}" class="btn btn-primary">Create Inward</a>
+        <a href="{{ route('gate.create') }}" class="btn btn-primary">Create Raw Material Store Entry</a>
         @endbtn
 
         @mytable
         <div>
             <table class="table table-bordered">
                 <tr>
-                    <th>Product Color</th>
-                    <th>Product Size</th>
-                    <th>Product Qty</th>
-                    <th>Product Rate</th>
-                    <th>Product TotalPrice</th>
-                    <th>Remaining</th>
-                    <th>Create Raw Material</th>
+                    <th>Inward Driver Name </th>
+                    <th>Store Name</th>
+                    <th>Issue</th>
+                    <th>Quantity</th>
+                    <th>Inward Remaining</th>
                     <th>Action</th>
                 </tr>
-                @foreach($inwards as $inward)
+                @foreach($rawmaterials as $rawmaterial)
                     <tr>
-                        <td>{{ $inward->productColor }}</td>
-                        <td>{{ $inward->productSize }}</td>
-                        <td>{{ $inward->productQty }}</td>
-                        <td>{{ $inward->productRate }}</td>
-                        <td>{{ $inward->totalPrice }}</td>
-                        <td>{{ $inward->remaining }}</td>
-
-                        <td>
-                            <a href="{{ route('rawmaterial.create', ['inwardId'=>$inward->id]) }}"
-                               class="btn btn-primary btn-xs">
-                                <i class="fa fa-plus"></i>
-                                <span>RawMaterial</span>
-                            </a>
-                        </td>
+                        <td>{{ $rawmaterial->inward->driverName }}</td>
+                        <td>{{ $rawmaterial->storeName }}</td>
+                        <td>{{ $rawmaterial->issue }}</td>
+                        <td>{{ $rawmaterial->qty }}</td>
+                        <td>{{ $rawmaterial->inward->remaining }}</td>
 
                         <!-- edit and delete buttons here -->
                         <td>
-                            <a href="{{ route('inward.edit', ['inward'=>$inward->id]) }}"
+                            <a href="{{ route('rawmaterial.edit',
+                        ['inwardId'=>$rawmaterial->inward->id, 'rawmaterial'=>$rawmaterial->id]) }}"
                                class="btn btn-warning btn-sm">
                                 <i class="fa fa-pencil"></i>
                             </a>
 
                             <a href="#"
-                               data-toggle="modal" data-target="#{{$inward->id}}"
+                               data-toggle="modal" data-target="#{{$rawmaterial->id}}"
                                class="btn btn-danger btn-sm">
                                 <i class="fa fa-trash"></i>
                             </a>
 
                             <!-- adding the modal -->
-                            @modal(['obj'=>$inward])
+                            @modal(['obj'=>$rawmaterial])
                             @slot('modalTitle')
-                                Delete Inward
+                                Delete Gate
                             @endslot
                             @slot('modalHeader')
                                 Are you sure you want to delete this ??
                             @endslot
 
-                            <form method="POST"
-                                  action="{{ route('inward.destroy',
-                                            ['inward' => $inward->id]) }}">
+                            <form method="POST" action="{{ route('rawmaterial.destroy',
+                ['inwardId'=>$rawmaterial->inward->id, 'rawmaterial'=>$rawmaterial->id]) }}">
 
                                 @method('delete')
                                 @csrf

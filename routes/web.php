@@ -67,4 +67,7 @@ Route::delete('/inward/{inward}', 'Store\InwardController@destroy')
 Route::patch('/inward/{inward}', 'Store\InwardController@update')
     ->name('inward.update');
 
+// Routes for Raw Material
+Route::resource('/inward/{inwardId}/rawmaterial', 'Store\RawMaterialStoreController');
+
 

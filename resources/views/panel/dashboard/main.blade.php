@@ -147,6 +147,24 @@
                                 </ul>
                                 <!-- /.nav-third-level -->
                             </li>
+
+                            <li>
+                                <a href="#">Inward Gate Pass <span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="{{ route('inward.create') }}">
+                                            Create Inward Gate Pass
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('inward.index') }}">
+                                            Display All Inward Entries
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-third-level -->
+                            </li>
+
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
