@@ -70,4 +70,7 @@ Route::patch('/inward/{inward}', 'Store\InwardController@update')
 // Routes for Raw Material
 Route::resource('/inward/{inwardId}/rawmaterial', 'Store\RawMaterialStoreController');
 
+// Routes for Plant Sheet Module
+Route::resource('/rawmaterial/{raw}/plantsheet', 'Store\PlantSheetController');
+
 
