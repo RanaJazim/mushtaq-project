@@ -25,8 +25,8 @@
                     <th>Product Qty</th>
                     <th>Product Rate</th>
                     <th>Product TotalPrice</th>
-                    <th>Remaining</th>
-                    <th>Create Raw Material</th>
+                    <th>Select Machine</th>
+                    <th>Machine List</th>
                     <th>Action</th>
                 </tr>
                 @foreach($inwards as $inward)
@@ -36,13 +36,18 @@
                         <td>{{ $inward->productQty }}</td>
                         <td>{{ $inward->productRate }}</td>
                         <td>{{ $inward->totalPrice }}</td>
-                        <td>{{ $inward->remaining }}</td>
 
                         <td>
-                            <a href="{{ route('rawmaterial.create', ['inwardId'=>$inward->id]) }}"
+                            <a href="{{ route('machine.select', ['inward'=>$inward->id]) }}">
+                                Select Machine
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="{{ route('machine.index', ['inward'=>$inward->id]) }}"
                                class="btn btn-primary btn-xs">
-                                <i class="fa fa-plus"></i>
-                                <span>RawMaterial</span>
+                                <i class="fa fa-eye"></i>
+                                <span>All Machines</span>
                             </a>
                         </td>
 

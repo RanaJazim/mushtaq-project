@@ -12,4 +12,9 @@ class Machine extends Model
     {
         return $this->hasMany(Plantsheet::class);
     }
+
+    public function rawmaterial()
+    {
+        return $this->hasOne(Rawmaterial::class);
+    }
 }

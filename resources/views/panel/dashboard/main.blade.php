@@ -93,6 +93,14 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Daybook<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{ route('daybook.create') }}">Create Daybook</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i> Invoice<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>

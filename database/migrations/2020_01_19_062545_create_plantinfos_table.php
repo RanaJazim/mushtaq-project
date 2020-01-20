@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRawmaterialsTable extends Migration
+class CreatePlantinfosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateRawmaterialsTable extends Migration
      */
     public function up()
     {
-        Schema::create('rawmaterials', function (Blueprint $table) {
+        Schema::create('plantinfos', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('inward_id')->index();
-            $table->string('storeName');
-            $table->integer('issue');
-            $table->integer('qty');
+            $table->string('partyName');
+            $table->string('nali');
+            $table->string('sheetPly');
+            $table->integer('size');
+            $table->integer('sheet');
             $table->timestamps();
 
             $table->foreign('inward_id')->references('id')
@@ -33,6 +35,6 @@ class CreateRawmaterialsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('rawmaterials');
+        Schema::dropIfExists('plantinfos');
     }
 }

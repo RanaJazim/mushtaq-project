@@ -68,9 +68,42 @@ Route::patch('/inward/{inward}', 'Store\InwardController@update')
     ->name('inward.update');
 
 // Routes for Raw Material
-Route::resource('/inward/{inwardId}/rawmaterial', 'Store\RawMaterialStoreController');
+//Route::resource('/inward/{inwardId}/rawmaterial', 'Store\RawMaterialStoreController');
+
+// Routes for Select Machine ( -- Raw Material Store -- )
+Route::get('/inward/{inward}/select/machine', 'Store\SelectMachineController@create')
+    ->name('machine.select');
+Route::post('/add/machine', 'Store\SelectMachineController@store')
+    ->name('machine.store');
+Route::get('/inward/{inward}/machines', 'Store\SelectMachineController@index')
+    ->name('machine.index');
+
 
 // Routes for Plant Sheet Module
-Route::resource('/rawmaterial/{raw}/plantsheet', 'Store\PlantSheetController');
+Route::get('/inward/{inward}/raw/create', 'Store\PlantSheetController@create')
+    ->name('plantsheet.create');
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Authentication
+Route::get('/login', function () {
+    return view('authentication.login');
+});
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

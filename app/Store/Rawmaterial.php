@@ -13,8 +13,23 @@ class Rawmaterial extends Model
         return $this->belongsTo(Inward::class);
     }
 
-    public function plantsheets()
+    public function machine()
     {
-        return $this->hasMany(Plantsheet::class);
+        return $this->belongsTo(Machine::class);
     }
+
+//    public function machines()
+//    {
+//        return $this->hasMany(Machine::class);
+//    }
+
+    public function plantsheet()
+    {
+        return $this->hasOne(Plantsheet::class);
+    }
+
+//    public function plantinfo()
+//    {
+//        return $this->hasOne(Plantinfo::class);
+//    }
 }

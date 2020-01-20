@@ -24,4 +24,14 @@ class Inward extends Model
     {
         return $this->hasMany(Rawmaterial::class);
     }
+
+//    public function plantinfo()
+//    {
+//        return $this->hasOne(Plantinfo::class);
+//    }
+
+    public function plantinfo()
+    {
+        return $this->belongsTo(Plantinfo::class);
+    }
 }
