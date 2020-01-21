@@ -37,7 +37,7 @@
                         <td>{{ $inward->productQty }}</td>
 
                         <td>
-                            <a href="{{ route('plantsheet.create', ['inward'=>$inward->id]) }}"
+                            <a href="{{ route('plantsheet.create', ['inward'=>$inward->id, 'raw'=>$rawmaterial->id]) }}"
                                class="btn btn-primary btn-xs"
                                 {{ $rawmaterial->plantsheet ? 'disabled' : ''  }}>
                                 Create Plant Sheet
@@ -50,6 +50,13 @@
         </div>
         @endmytable
 
+        <!-- print functionality -->
+        <div>
+            <a href="" class="btn btn-success">
+                Add Some Info to Print Out Plant Sheet
+            </a>
+        </div>
+        <!-- /print functionality -->
 
     </div>
 

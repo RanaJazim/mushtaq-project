@@ -80,9 +80,10 @@ Route::get('/inward/{inward}/machines', 'Store\SelectMachineController@index')
 
 
 // Routes for Plant Sheet Module
-Route::get('/inward/{inward}/raw/create', 'Store\PlantSheetController@create')
+Route::get('/inward/{inward}/raw/{raw}/plantsheet/create', 'Store\PlantSheetController@create')
     ->name('plantsheet.create');
-
+Route::post('/plantsheet', 'Store\PlantSheetController@store')
+    ->name('plantsheet.store');
 
 
 
