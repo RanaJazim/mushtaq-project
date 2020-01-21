@@ -50,6 +50,7 @@ class DaybookController extends Controller
 
     public function update(Request $request, $id, DaybookRepo $repo)
     {
+//        return $request;
         $repo->update($request, $id, new DaybookValidation());
 
         return back();

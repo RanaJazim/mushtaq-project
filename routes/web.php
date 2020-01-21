@@ -29,6 +29,13 @@ Route::post('/daybook', 'DaybookController@store')->name('daybook.store');
 Route::get('/daybook', 'DaybookController@index')->name('daybook.index');
 Route::patch('/daybook/{daybook}', 'DaybookController@update')->name('daybook.update');
 
+// Routes for Expenses
+Route::get('/expenses/create', 'ExpensesController@create')
+    ->name('expenses.create');
+Route::get('/expenses', 'ExpensesController@selectDate')
+    ->name('expenses.select');
+
+
 // Routes for Gate
 Route::resource('/gate', 'GatesController');
 

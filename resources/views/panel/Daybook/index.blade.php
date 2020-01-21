@@ -78,7 +78,13 @@
                                     <div class="form-group">
                                         <label for="price">Price </label>
                                         <input type="number" id="price" class="form-control"
-                                               name="price" value="{{ $daybook->price }}">
+                                               name="price" value="{{ $daybook->price }}" readonly>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="new_price">How much value you want to Update!</label>
+                                        <input required type="number" id="new_price" class="form-control"
+                                                name="new_price" value="{{ old('new_price') }}">
                                     </div>
 
                                     <input type="submit" class="btn btn-success"

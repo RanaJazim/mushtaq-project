@@ -62,10 +62,24 @@ class DaybookRepo
         $attributes = $validation->validate_data($values);
         $daybook = Daybook::findOrFail($id);
 
-        $daybook->description = $attributes['description'];
-        $daybook->price = $attributes['price'];
+        // check if this particular daybook is opening balance if it is then update
+        // the opening balance of Balance Table
+        if ($daybook->status)
+            $this->update_opening_balance($values['new_price']);
+
+        $daybook->description = $values['description'];
+        $daybook->price += $values['new_price'];
         $daybook->save();
 
         return $daybook;
+    }
+
+    private function update_opening_balance($new_price)
+    {
+        $balance = Balance::where('openingBalanceDate', 'like',
+            '%' . date('Y-m-d') . '%')->first();
+
+        $balance->todayBalance += $new_price;
+        return $balance->save();
     }
 }
