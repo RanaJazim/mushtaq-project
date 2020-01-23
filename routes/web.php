@@ -93,15 +93,25 @@ Route::post('/plantsheet', 'Store\PlantSheetController@store')
     ->name('plantsheet.store');
 
 
+// Routes for PO Module
+Route::get('/po/select/party', 'Po\PoController@open')
+    ->name('po.open');
+Route::get('/party/{party}/po/create', 'Po\PoController@create')
+    ->name('po.create');
+Route::post('/po', 'Po\PoController@store')
+    ->name('po.store');
+Route::get('/party/{party}/po', 'Po\PoController@index')
+    ->name('po.index');
+Route::delete('/po/{po}', 'Po\PoController@destroy')
+    ->name('po.destroy');
 
-
-
-
-
-
-
-
-
+// Routes for Poinfo module
+Route::get('/po/{po}/poinfo/create', 'Po\PoInfoController@create')
+    ->name('poinfo.create');
+Route::post('/poinfo', 'Po\PoInfoController@store')
+    ->name('poinfo.store');
+Route::get('/po/{po}/poinfo', 'Po\PoInfoController@index')
+    ->name('poinfo.index');
 
 
 

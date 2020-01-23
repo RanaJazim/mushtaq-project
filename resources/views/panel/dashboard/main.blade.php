@@ -176,6 +176,14 @@
                         </ul>
                         <!-- /.nav-second-level -->
                     </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> PO<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{ route('po.open') }}">Create PO</a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
 
             </div>
