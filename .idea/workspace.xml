@@ -2,25 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="187ee8e4-2178-4cf1-bcef-3a8f01cd2f0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Po/PoInfoRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Po/PoRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/PoInfoValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/PoValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Po/PoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Po/PoInfoController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/PoModule/Po.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/PoModule/Poinfo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_23_192607_create_pos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_23_202005_create_poinfos_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/po/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/po/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/po/open.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/poinfo/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/poinfo/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Store/PrintReportRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/PrintReportValidation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/PrintReportController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Store/Printreport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_27_110253_create_printreports_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/printreport/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/MyInvoice/Party.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/MyInvoice/Party.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/dashboard/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/dashboard/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Custom/Validation/PlantSheetValidation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Custom/Validation/PlantSheetValidation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Store/SelectMachineController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/SelectMachineController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Store/Inward.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Store/Inward.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_19_062545_create_plantinfos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_19_062545_create_plantinfos_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/store/myplantsheet/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/store/myplantsheet/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/store/selectmachine/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/store/selectmachine/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -141,6 +135,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunManager">
@@ -176,7 +171,11 @@
       <workItem from="1579809781914" duration="470000" />
       <workItem from="1579810323485" duration="1960000" />
       <workItem from="1579812791834" duration="308000" />
-      <workItem from="1579813142216" duration="1315000" />
+      <workItem from="1579813142216" duration="1944000" />
+      <workItem from="1579904456516" duration="308000" />
+      <workItem from="1579949991765" duration="670000" />
+      <workItem from="1580002633338" duration="189000" />
+      <workItem from="1580120393408" duration="6012000" />
     </task>
     <servers />
   </component>
@@ -184,13 +183,13 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1579813142779">
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1580120417460">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="208" y="192" key="com.intellij.ide.util.TipDialog/0.0.1024.738@0.0.1024.738" timestamp="1579813142779" />
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1579811680361">
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog/0.0.1024.738@0.0.1024.738" timestamp="1580120417460" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580126213486">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1579811680361" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1580126213486" />
   </component>
 </project>

@@ -52,7 +52,9 @@
 
         <!-- print functionality -->
         <div>
-            <a href="" class="btn btn-success">
+            <a href="{{ route('psReport.create', ['inward'=>$inward->id]) }}"
+               class="btn btn-success"
+               {{ $inward->plantinfo ? '' : 'disabled' }}>
                 Add Some Info to Print Out Plant Sheet
             </a>
         </div>

@@ -15,6 +15,7 @@ class PlantSheetValidation implements IValidation
             'useWeight' => 'required',
             'size' => 'required',
             'sheetPly' => 'required',
+            'cutSheet' => 'required',
         ]);
     }
 }

@@ -34,4 +34,9 @@ class Inward extends Model
     {
         return $this->belongsTo(Plantinfo::class);
     }
+
+    public function printreport()
+    {
+        return $this->belongsTo(Printreport::class);
+    }
 }

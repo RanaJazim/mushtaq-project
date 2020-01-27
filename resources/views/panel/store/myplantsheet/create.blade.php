@@ -88,6 +88,13 @@
                             : '' }}" {{ $is_true ? 'readonly' : '' }}>
                 </div>
 
+                <div class="form-group">
+                    <label for="cutSheet">Cut Sheet</label>
+                    <input type="number" id="cutSheet" name="cutSheet"
+                           class="form-control" value="{{ $is_true ? $plantinfo->cutSheet
+                            : '' }}" {{ $is_true ? 'readonly' : '' }}>
+                </div>
+
                 <!-- /Plant Sheet Info -->
 
                 <div class="form-group">

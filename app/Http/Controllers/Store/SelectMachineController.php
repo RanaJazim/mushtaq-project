@@ -14,7 +14,7 @@ class SelectMachineController extends Controller
     {
         return view('panel.store.selectmachine.index', [
             'rawmaterials'  => $repo->index($inward_id),
-            'inward'        => Inward::findOrFail($inward_id)
+            'inward'        => Inward::findOrFail($inward_id),
         ]);
     }
 
@@ -24,7 +24,8 @@ class SelectMachineController extends Controller
 
         return view('panel.store.selectmachine.create', [
             'machines'  => $records['machines'],
-            'inward'    => $records['inward']
+            'inward'    => $records['inward'],
+
         ]);
     }
 

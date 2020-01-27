@@ -93,6 +93,13 @@ Route::post('/plantsheet', 'Store\PlantSheetController@store')
     ->name('plantsheet.store');
 
 
+// Routes for Print the Report of Plantsheet
+Route::get('inward/{inward}/printreport/create', 'Store\PrintReportController@create')
+    ->name('psReport.create');
+Route::post('/inward/{inward}/printreport', 'Store\PrintReportController@store')
+    ->name('psReport.store');
+
+
 // Routes for PO Module
 Route::get('/po/select/party', 'Po\PoController@open')
     ->name('po.open');
@@ -112,6 +119,7 @@ Route::post('/poinfo', 'Po\PoInfoController@store')
     ->name('poinfo.store');
 Route::get('/po/{po}/poinfo', 'Po\PoInfoController@index')
     ->name('poinfo.index');
+
 
 
 

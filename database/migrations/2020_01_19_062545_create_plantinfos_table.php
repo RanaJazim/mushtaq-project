@@ -21,6 +21,7 @@ class CreatePlantinfosTable extends Migration
             $table->string('sheetPly');
             $table->integer('size');
             $table->integer('sheet');
+            $table->integer('cutSheet');
             $table->timestamps();
 
             $table->foreign('inward_id')->references('id')
