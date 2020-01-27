@@ -2,19 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="187ee8e4-2178-4cf1-bcef-3a8f01cd2f0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Store/PrintReportRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/PrintReportValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/PrintReportController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Store/Printreport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_27_110253_create_printreports_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/printreport/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Store/FinishStoreRepo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/FinishStoreValidation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/FinishStoreController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Store/Finishstore.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_27_124019_create_finishstores_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/finishstore/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/finishstore/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/finishstore/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Custom/Validation/PlantSheetValidation.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Custom/Validation/PlantSheetValidation.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Store/SelectMachineController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/SelectMachineController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Store/Inward.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Store/Inward.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_19_062545_create_plantinfos_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_19_062545_create_plantinfos_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/store/myplantsheet/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/store/myplantsheet/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/panel/store/selectmachine/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/store/selectmachine/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -175,7 +171,9 @@
       <workItem from="1579904456516" duration="308000" />
       <workItem from="1579949991765" duration="670000" />
       <workItem from="1580002633338" duration="189000" />
-      <workItem from="1580120393408" duration="6012000" />
+      <workItem from="1580120393408" duration="8361000" />
+      <workItem from="1580130353070" duration="67000" />
+      <workItem from="1580130456394" duration="1189000" />
     </task>
     <servers />
   </component>
@@ -183,13 +181,17 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="208" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1580120417460">
+    <state x="104" y="27" key="#Notifications" timestamp="1580130431382">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="208" y="192" key="com.intellij.ide.util.TipDialog/0.0.1024.738@0.0.1024.738" timestamp="1580120417460" />
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580126213486">
+    <state x="104" y="27" key="#Notifications/0.0.1024.738@0.0.1024.738" timestamp="1580130431382" />
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1580130493574">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1580126213486" />
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog/0.0.1024.738@0.0.1024.738" timestamp="1580130493574" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580129499616">
+      <screen x="0" y="0" width="1024" height="738" />
+    </state>
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1580129499616" />
   </component>
 </project>

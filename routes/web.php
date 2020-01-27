@@ -121,7 +121,19 @@ Route::get('/po/{po}/poinfo', 'Po\PoInfoController@index')
     ->name('poinfo.index');
 
 
-
+// Routes for Final Finish Store
+Route::get('/final-finish-store/create', 'Store\FinishStoreController@create')
+    ->name('finishstore.create');
+Route::post('/final-finish-store', 'Store\FinishStoreController@store')
+    ->name('finishstore.store');
+Route::get('/final-finish-store', 'Store\FinishStoreController@index')
+    ->name('finishstore.index');
+Route::get('/final-finish-store/edit/{id}', 'Store\FinishStoreController@edit')
+    ->name('finishstore.edit');
+Route::patch('/final-finish-store/{id}', 'Store\FinishStoreController@update')
+    ->name('finishstore.update');
+Route::delete('/final-finish-store/{id}', 'Store\FinishStoreController@destroy')
+    ->name('finishstore.destroy');
 
 // Authentication
 Route::get('/login', function () {
