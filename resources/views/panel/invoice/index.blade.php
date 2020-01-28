@@ -13,7 +13,7 @@
         @endalert
 
         @btn
-        <a href="/invoice/create?isTaxPayer={{ $isTaxPayer }}" class="btn btn-primary">Create Product</a>
+        <a href="/invoice/create?isTaxPayer={{ $isTaxPayer }}" class="btn btn-primary">Create Invoice</a>
         @endbtn
 
         @mytable
@@ -27,7 +27,10 @@
                     <tr>
                         <td>{{ $party->buyerName }}</td>
                         <td>
-                            <a href="">Invoice</a>
+                            <a href="{{ route('invoice.all',
+                                ['party'=>$party->id, 'isTaxPayer' => $isTaxPayer]) }}">
+                                Invoice
+                            </a>
                         </td>
                     </tr>
                 @endforeach

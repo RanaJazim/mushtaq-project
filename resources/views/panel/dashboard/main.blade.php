@@ -93,6 +93,28 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Product<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{ route('product.create') }}">Create Product</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('product.index') }}">Display All Products</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap fa-fw"></i> Party<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="{{ route('party.create') }}">Create Party</a>
+                            </li>
+                            <li>
+                                <a href="{{ route('party.index') }}">Display All Parties</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
                         <a href="#"><i class="fa fa-sitemap fa-fw"></i> Daybook<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
@@ -108,30 +130,6 @@
                             </li>
                             <li>
                                 <a href="#">Display Invoices</a>
-                            </li>
-                            <li>
-                                <a href="#">Party <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="{{ route('party.create') }}">Create Party</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('party.index') }}">Display All Parties</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-third-level -->
-                            </li>
-                            <li>
-                                <a href="#">Product <span class="fa arrow"></span></a>
-                                <ul class="nav nav-third-level">
-                                    <li>
-                                        <a href="{{ route('product.create') }}">Create Product</a>
-                                    </li>
-                                    <li>
-                                        <a href="{{ route('product.index') }}">Display All Products</a>
-                                    </li>
-                                </ul>
-                                <!-- /.nav-third-level -->
                             </li>
                         </ul>
                         <!-- /.nav-second-level -->

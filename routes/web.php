@@ -54,7 +54,15 @@ Route::post('/invoice', 'Invoice\InvoiceController@store')
     ->name('invoice.store');
 Route::get('/invoice/{isTaxPayer}', 'Invoice\InvoiceController@index')
     ->name('invoice.index');
-Route::get('/invoice/party/all/{id}', 'Invoice\InvoiceController@allParty');
+Route::get('/invoice/party/{party}/all/status/{isTaxPayer}',
+    'Invoice\InvoiceController@allParty')
+    ->name('invoice.all');
+Route::get('/invoice/{invoice}/status/{isTaxPayer}/print',
+    'Invoice\InvoiceController@print')
+    ->name('invoice.print');
+Route::get('/invoice/{invoice}/status/{isTaxPayer}/dc/print',
+    'Invoice\InvoiceController@dcPrint')
+    ->name('invoice.dcPrint');
 
 
 // Roll store routes

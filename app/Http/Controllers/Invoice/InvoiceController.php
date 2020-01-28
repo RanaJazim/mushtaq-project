@@ -2,21 +2,25 @@
 
 namespace App\Http\Controllers\Invoice;
 
+use App\Custom\Repository\Invoice\InvoiceAllRepo;
 use App\Custom\Repository\Invoice\InvoiceStoreRepo;
 use App\Custom\Repository\Party\InvoicePartyAllRepo;
 use App\Custom\Repository\Party\PartyEditRepo;
 use App\Custom\Repository\Product\ProductAllRepo;
 use App\Custom\Validation\InvoiceValidation;
 use App\Http\Controllers\Controller;
+use App\MyInvoice\Party;
 use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
 {
-    public function allParty(PartyEditRepo $repo, $id)
+    public function allParty(InvoicePartyAllRepo $repo, $party_id, $isTaxPayer)
     {
-        return $repo->edit($id)->invoices;
+        return view('panel.invoice.record', [
+            'invoices' => $repo->get_appropriate_record($party_id),
+            'isTaxPayer' => $isTaxPayer
+        ]);
     }
-
 
     public function index($isTaxPayer, InvoicePartyAllRepo $repo)
     {
@@ -46,6 +50,18 @@ class InvoiceController extends Controller
         $repo->store($request, new InvoiceValidation());
 
         return back();
+    }
+
+    public function print($invoice_id, $isTaxPayer, InvoiceAllRepo $repo)
+    {
+        $records = $repo->print($invoice_id, $isTaxPayer);
+
+        return view('panel.invoice.' . $records['link']);
+    }
+
+    public function dcPrint($invoice_id, $isTaxPayer)
+    {
+        return view('panel.invoice.dcReport');
     }
 
 }

@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="187ee8e4-2178-4cf1-bcef-3a8f01cd2f0b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Custom/Repository/Store/FinishStoreRepo.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Custom/Validation/FinishStoreValidation.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/FinishStoreController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Store/Finishstore.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_01_27_124019_create_finishstores_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/finishstore/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/finishstore/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/panel/store/finishstore/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/dcReport.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/record.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/taxreport.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/panel/invoice/withoutTaxReport.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Custom/Repository/Invoice/InvoiceAllRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Custom/Repository/Invoice/InvoiceAllRepo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Custom/Repository/Party/InvoicePartyAllRepo.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Custom/Repository/Party/InvoicePartyAllRepo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Invoice/InvoiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Invoice/InvoiceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Store/FinishStoreController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Store/FinishStoreController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/dashboard/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/dashboard/main.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/panel/invoice/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/panel/invoice/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +175,8 @@
       <workItem from="1580002633338" duration="189000" />
       <workItem from="1580120393408" duration="8361000" />
       <workItem from="1580130353070" duration="67000" />
-      <workItem from="1580130456394" duration="1189000" />
+      <workItem from="1580130456394" duration="2246000" />
+      <workItem from="1580169355607" duration="4066000" />
     </task>
     <servers />
   </component>
@@ -185,13 +188,13 @@
       <screen x="0" y="0" width="1024" height="738" />
     </state>
     <state x="104" y="27" key="#Notifications/0.0.1024.738@0.0.1024.738" timestamp="1580130431382" />
-    <state x="208" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1580130493574">
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1580169486653">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="208" y="192" key="com.intellij.ide.util.TipDialog/0.0.1024.738@0.0.1024.738" timestamp="1580130493574" />
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580129499616">
+    <state x="208" y="192" key="com.intellij.ide.util.TipDialog/0.0.1024.738@0.0.1024.738" timestamp="1580169486653" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1580173319089">
       <screen x="0" y="0" width="1024" height="738" />
     </state>
-    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1580129499616" />
+    <state x="175" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1024.738@0.0.1024.738" timestamp="1580173319089" />
   </component>
 </project>

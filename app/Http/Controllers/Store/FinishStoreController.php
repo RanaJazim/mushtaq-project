@@ -49,5 +49,5 @@ class FinishStoreController extends Controller
 
         return back();
     }
-    
+
 }
