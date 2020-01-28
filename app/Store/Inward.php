@@ -32,11 +32,11 @@ class Inward extends Model
 
     public function plantinfo()
     {
-        return $this->belongsTo(Plantinfo::class);
+        return $this->hasOne(Plantinfo::class);
     }
 
     public function printreport()
     {
-        return $this->belongsTo(Printreport::class);
+        return $this->hasOne(Printreport::class);
     }
 }

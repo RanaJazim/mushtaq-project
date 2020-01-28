@@ -21,7 +21,13 @@ class PrintReportController extends Controller
 
     public function store(Request $request, $inward_id, PrintReportRepo $repo)
     {
-        return $repo->store($request, new PrintReportValidation());
-//        return $request;
+        $repo->store($request, new PrintReportValidation());
+
+        return back();
+    }
+
+    public function print($inward_id)
+    {
+        return view('panel.store.printreport.print');
     }
 }

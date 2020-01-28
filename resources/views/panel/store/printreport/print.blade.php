@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</head>
+<style >
+    h1,h3{
+        text-align: center;
+    }
+    hr {
+        border: 2px solid black;
+        border-radius: 2px;
+    }
+    .table-bordered{
+        border: 2px solid black;
+    }
+</style>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1><b>MUSHTAQ AHMED PACKAGING (PVT)LTD<b></h1>
+            <center><h2>Daily Production Report</h2></center>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-8">
+            <h4><b>Sr No :_______________</h4>
+            <h4><b>Date :_______________</h4>
+            <h4><b>Size</b>____________</h4>
+            <h4><b>Party Name :_______________</h4>
+            <h4><b>Sheet ( Ply ):</b>____________</h4>
+            <h4><b>Material In Use:</b>_______________</h4>
+        </div>
+
+    </div>
+
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-12">
+
+            <table class="table table-responsive table-bordered" class="table1">
+                <thead>
+                <tr>
+
+                    <th colspan="6" >Paper ( Inner ) M-1 </th>
+                    <th colspan="6" >Nali ( M-2)</th>
+                    <th colspan="6" >Paper ( Centre ) M-3 </th>
+                    <th colspan="6" >Nali ( M-4)</th>
+                    <th colspan="6" >Paper ( Outer ) M-5 </th>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+
+
+
+                </tr>
+                <tr>
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Use Wt</th>
+                    <th>Rate</th>
+                    <th>Value</th>
+                    <th>GRN</th>
+
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Use Wt</th>
+                    <th>Rate</th>
+                    <th>Value</th>
+                    <th>GRN</th>
+
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Use Wt</th>
+                    <th>Rate</th>
+                    <th>Value</th>
+                    <th>GRN</th>
+
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Use Wt</th>
+                    <th>Rate</th>
+                    <th>Value</th>
+                    <th>GRN</th>
+
+                    <th>Size</th>
+                    <th>Quantity</th>
+                    <th>Use Wt</th>
+                    <th>Rate</th>
+                    <th>Value</th>
+                    <th>GRN</th>
+
+
+
+
+
+
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>-</td>
+
+
+
+
+
+                </tr>
+                </tbody>
+            </table>
+
+
+
+
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12">
+
+                        <table class="table table-responsive table-bordered" class="table1">
+                            <thead>
+                            <tr>
+
+                                <th colspan="1" >Gas </th>
+                                <th colspan="1" >Starch</th>
+                                <th colspan="1" >Caustic SOda</th>
+                                <th colspan="1" >Borex</th>
+                                <th colspan="1" >Wood </th>
+                                <th colspan="1" >Electric </th>
+                                <th colspan="1" >Lab/Sheet</th>
+                                <th colspan="1" >Office Expenses</th>
+                                <th colspan="1" >Total:</th>
+                                <th colspan="1" >CST/SHEET</th>
+                                <th colspan="1" >Lab/ Ctn</th>
+                                <th colspan="1" >Pri Ch</th>
+                                <th colspan="1" >Total</th>
+                                <th colspan="1" >Cst / Ctn</th>
+                                <br/>
+                                <br/>
+                                <br/>
+
+
+
+                            </tr>
+
+
+
+
+
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+                                <td>--</td>
+
+
+
+
+
+
+                            </tbody>
+
+                        </table>
+                    </div>
+
+
+
+
+                </div>
+
+</body>
+</html>

@@ -10,6 +10,6 @@ class Printreport extends Model
 
     public function inward()
     {
-        return $this->hasOne(Inward::class);
+        return $this->belongsTo(Inward::class);
     }
 }

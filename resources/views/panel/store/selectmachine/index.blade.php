@@ -51,12 +51,24 @@
         @endmytable
 
         <!-- print functionality -->
-        <div>
-            <a href="{{ route('psReport.create', ['inward'=>$inward->id]) }}"
-               class="btn btn-success"
-               {{ $inward->plantinfo ? '' : 'disabled' }}>
-                Add Some Info to Print Out Plant Sheet
-            </a>
+        <div class="row">
+            @if(!$inward->printreport)
+                <div class="col-md-4">
+                    <a href="{{ route('psReport.create', ['inward'=>$inward->id]) }}"
+                       class="btn btn-success"
+                        {{ $inward->plantinfo ? '' : 'disabled' }}>
+                        Add Some Info to Print Out Plant Sheet
+                    </a>
+                </div>
+            @endif
+            @if($inward->printreport)
+                <div class="col-md-3">
+                    <a href="{{ route('psReport.print', ['inward'=>$inward->id]) }}"
+                       class="btn btn-primary">
+                        Print Report
+                    </a>
+                </div>
+            @endif
         </div>
         <!-- /print functionality -->
 

@@ -106,6 +106,8 @@ Route::get('inward/{inward}/printreport/create', 'Store\PrintReportController@cr
     ->name('psReport.create');
 Route::post('/inward/{inward}/printreport', 'Store\PrintReportController@store')
     ->name('psReport.store');
+Route::get('/inward/{inward}/plantsheet/report', 'Store\PrintReportController@print')
+    ->name('psReport.print');
 
 
 // Routes for PO Module

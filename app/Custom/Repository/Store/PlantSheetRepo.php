@@ -58,6 +58,7 @@ class PlantSheetRepo
         $plant_info->sheetPly = $values['sheetPly'];
         $plant_info->size = $values['size'];
         $plant_info->sheet = $values['sheet'];
+        $plant_info->cutSheet = $values['cutSheet'];
 
         return $plant_info->save();
     }

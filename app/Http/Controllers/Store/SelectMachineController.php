@@ -6,6 +6,7 @@ use App\Custom\Repository\Store\SelectMachineRepo;
 use App\Custom\Validation\SelectMachineValidation;
 use App\Http\Controllers\Controller;
 use App\Store\Inward;
+use App\Store\Plantinfo;
 use Illuminate\Http\Request;
 
 class SelectMachineController extends Controller

@@ -13,13 +13,13 @@ class Plantinfo extends Model
 //        return $this->belongsTo(Rawmaterial::class);
 //    }
 
-//    public function inward()
-//    {
-//        return $this->belongsTo(Inward::class);
-//    }
-
     public function inward()
     {
-        return $this->hasOne(Inward::class);
+        return $this->belongsTo(Inward::class);
     }
+
+//    public function inward()
+//    {
+//        return $this->hasOne(Inward::class);
+//    }
 }
